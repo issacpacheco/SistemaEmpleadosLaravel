@@ -20,13 +20,13 @@ Route::get('/', function () {
 // Route::get('/empleado', function () {
 //     return view('empleado.index');
 // });
-Route::post('/empleado', [EmpleadoController::class, 'store'])->middleware('auth');
-Route::get('/empleado/create', [EmpleadoController::class, 'create'])->middleware('auth');
-Route::get('/empleado/{empleado}/edit', [EmpleadoController::class, 'edit'])->middleware('auth');
-Route::get('/empleado/index', [EmpleadoController::class, 'index'])->middleware('auth');
-Route::get('/empleado/form', [EmpleadoController::class, 'form'])->middleware('auth');
-Route::delete('/empleado/{empleado}', [EmpleadoController::class, 'destroy'])->middleware('auth');
-Route::patch('/empleado/{empleado}', [EmpleadoController::class, 'update'])->middleware('auth');
+// Route::post('/empleado', [EmpleadoController::class, 'store'])->middleware('auth');
+// Route::get('/empleado/create', [EmpleadoController::class, 'create'])->middleware('auth');
+// Route::get('/empleado/{empleado}/edit', [EmpleadoController::class, 'edit'])->middleware('auth');
+// Route::get('/empleado/index', [EmpleadoController::class, 'index'])->middleware('auth');
+// Route::get('/empleado/form', [EmpleadoController::class, 'form'])->middleware('auth');
+// Route::delete('/empleado/{empleado}', [EmpleadoController::class, 'destroy'])->middleware('auth');
+// Route::patch('/empleado/{empleado}', [EmpleadoController::class, 'update'])->middleware('auth');
 // Route::resource('empleado', EmpleadoController::class);
 Route::resource('empleado', EmpleadoController::class);
 Auth::routes(['register' => false, 'reset' => false]);
